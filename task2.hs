@@ -69,11 +69,3 @@ hOrN (x:ab) = Just x
 printBoard :: Maybe B -> IO ()
 printBoard Nothing  = putStrLn "No solution"
 printBoard (Just z) = mapM_ putStrLn [show $ z `numberR` row | row <- [0..3]]
--- To run the programe 
--- runhaskell task2.hs (filename.hs)
--- Reference 
--- https://www.haskell.org/onlinereport/haskell2010/
--- https://www.haskell.org/onlinereport/haskell2010/haskellch14.html#x22-20100014
--- https://www.haskell.org/onlinereport/haskell2010/haskellch20.html#x28-24600020.9
--- https://wiki.haskell.org/Sudoku ( for sreference how to solve)
--- https://stackoverflow.com/    (for Error)
